@@ -1,0 +1,12 @@
+# Python okruženje i keš
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Tajne (Apify token!)
+.env
+
+# Beleške i materijali (ne idu na git)
+materials/
+CLAUDE.md
+OBJASNJENJE_FAZA.md
