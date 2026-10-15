@@ -6,6 +6,9 @@ __pycache__/
 # Tajne (Apify token!)
 .env
 
+# Sirovi podaci (sadrže imena recenzenata; ne idu na git)
+data/raw/
+
 # Beleške i materijali (ne idu na git)
 materials/
 CLAUDE.md
