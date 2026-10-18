@@ -1,8 +1,9 @@
-"""Faza 1: preuzimanje Yelp recenzija preko Apify actor-a.
+"""Faza 1: preuzimanje Yelp recenzija preko Apify actor-a (epicscrapers).
 
-TEST = True  -> 1 restoran, 20 recenzija (provera polja, par centi)
-TEST = False -> svih 30 restorana, sve recenzije od 2022-01-01
-Sirovi rezultat ide u data/raw/ i posle se ne menja.
+MODE = "preflight" -> svih 30, po 1 recenzija: provera URL-ova + broj recenzija (procena troška)
+MODE = "test"      -> 2 restorana, sve recenzije (provera pre punog skidanja)
+MODE = "full"      -> svih 30, sve recenzije od otvaranja, svi jezici
+Sirov rezultat ide u data/raw/ i posle se ne menja.
 """
 import json
 from decimal import Decimal
@@ -12,8 +13,16 @@ import pandas as pd
 from apify_client import ApifyClient
 
 ROOT = Path(__file__).resolve().parents[1]
-ACTOR = "tri_angle/yelp-review-scraper"
-TEST = True
+ACTOR = "epicscrapers/yelp-reviews-scraper"
+PRICE_PER_REVIEW = 0.00025  # USD, FREE nivo
+MODE = "preflight"
+
+# po režimu: koliko restorana, koliko recenzija po restoranu (0 = sve), gornja granica troška
+SETTINGS = {
+    "preflight": dict(n=30, max_reviews=1, cap="0.05"),
+    "test": dict(n=2, max_reviews=0, cap="2"),
+    "full": dict(n=30, max_reviews=0, cap="50"),
+}
 
 
 def read_token():
@@ -24,28 +33,34 @@ def read_token():
     raise SystemExit("APIFY_TOKEN nije pronađen u .env")
 
 
-restaurants = pd.read_csv(ROOT / "data" / "restaurants.csv")
-if TEST:
-    restaurants = restaurants.head(1)  # r01, Piccola Cucina Osteria
+s = SETTINGS[MODE]
+restaurants = pd.read_csv(ROOT / "data" / "restaurants.csv").head(s["n"])
 
 run_input = {
-    "startUrls": [{"url": u} for u in restaurants["yelp_url"]],
-    "language": "",  # sve jezike: ocena je ocena, bez obzira na jezik teksta
-    "dateFrom": "2022-01-01",
+    "businesses": list(restaurants["yelp_url"]),
+    "maxReviewsPerBusiness": s["max_reviews"],
+    "sortBy": "newest",
+    "languages": [],               # prazno = svi jezici
+    "includeReviewerDetails": True,  # reviewer ID, broj recenzija/prijatelja, Elite
 }
-if TEST:
-    run_input["maxReviewsPerUrl"] = 20
 
 client = ApifyClient(read_token())
-# max_total_charge_usd = gornja granica troška, da run ne može da "pobegne"
-run = client.actor(ACTOR).call(
-    run_input=run_input,
-    max_total_charge_usd=Decimal("0.50") if TEST else Decimal("40"),
-)
+run = client.actor(ACTOR).call(run_input=run_input, max_total_charge_usd=Decimal(s["cap"]))
 print("status:", run.status)
 
 items = client.dataset(run.default_dataset_id).list_items().items
-name = "tri_angle_test_r01.json" if TEST else "tri_angle_reviews_2022_2026.json"
-out = ROOT / "data" / "raw" / name
+out = ROOT / "data" / "raw" / f"yelp_epicscrapers_{MODE}.json"
 out.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"{len(items)} recenzija -> {out}")
+
+if MODE == "preflight":
+    # Jedan red po restoranu: spajamo preko ulaznog URL-a ("input")
+    biz = pd.DataFrame(items).drop_duplicates("input")[
+        ["input", "businessName", "isBusinessClosed", "businessRating",
+         "businessReviewCount", "businessPrice", "businessCategories"]]
+    table = restaurants[["id", "restoran", "yelp_url"]].merge(
+        biz, left_on="yelp_url", right_on="input", how="left")
+    print(table.drop(columns=["yelp_url", "input"]).to_string(index=False))
+    total = table["businessReviewCount"].sum()
+    print(f"\nNije nađeno: {table['businessName'].isna().sum()} | "
+          f"ukupno recenzija: {total:,.0f} | procena troška: ${total * PRICE_PER_REVIEW:.2f}")
