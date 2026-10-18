@@ -1,31 +1,31 @@
-id,restoran,yelp_alias,yelp_url,status_2026,napomena
-r01,Piccola Cucina Osteria,piccola-cucina-osteria-new-york,https://www.yelp.com/biz/piccola-cucina-osteria-new-york,OPEN,
-r02,Piccola Cucina Enoteca,piccola-cucina-enoteca-new-york-2,https://www.yelp.com/biz/piccola-cucina-enoteca-new-york-2,CLOSED,184 Prince St zatvoren
-r03,Club A Steakhouse,club-a-steakhouse-new-york,https://www.yelp.com/biz/club-a-steakhouse-new-york,OPEN,
-r04,Sottocasa Pizzeria - Harlem,sottocasa-pizzeria-harlem-new-york,https://www.yelp.com/biz/sottocasa-pizzeria-harlem-new-york,OPEN,
-r05,Boucherie Union Square,boucherie-union-square-new-york,https://www.yelp.com/biz/boucherie-union-square-new-york,OPEN,
-r06,Loi Estiatorio,loi-estiatorio-new-york,https://www.yelp.com/biz/loi-estiatorio-new-york,OPEN,
-r07,Song E Napule,song-e-napule-new-york,https://www.yelp.com/biz/song-e-napule-new-york,OPEN,
-r08,Los Tacos No.1,los-tacos-no-1-new-york-3,https://www.yelp.com/biz/los-tacos-no-1-new-york-3,OPEN,
-r09,Boucherie West Village,boucherie-west-village-new-york-3,https://www.yelp.com/biz/boucherie-west-village-new-york-3,OPEN,
-r10,Petite Boucherie,petite-boucherie-new-york,https://www.yelp.com/biz/petite-boucherie-new-york,OPEN,
-r11,Daniel,daniel-new-york-4,https://www.yelp.com/biz/daniel-new-york-4,OPEN,
-r12,Olio e Più,olio-e-piú-new-york-3,https://www.yelp.com/biz/olio-e-pi%C3%BA-new-york-3,OPEN,
-r13,Spice Symphony,spice-symphony-new-york,https://www.yelp.com/biz/spice-symphony-new-york,OPEN,Yelp ime: Spice Symphony - Lexington
-r14,Spice Symphony 2,spice-symphony-new-york-3,https://www.yelp.com/biz/spice-symphony-new-york-3,OPEN,Yelp ime: Spice Symphony (druga lokacija)
-r15,Sottocasa Pizzeria (Brooklyn),sottocasa-pizzeria-brooklyn-3,https://www.yelp.com/biz/sottocasa-pizzeria-brooklyn-3,OPEN,
-r16,Le Bernardin,le-bernardin-new-york,https://www.yelp.com/biz/le-bernardin-new-york,OPEN,
-r17,Royal 35 Steakhouse,royal-35-steakhouse-new-york,https://www.yelp.com/biz/royal-35-steakhouse-new-york,OPEN,
-r18,Murray's Cheese Bar,murrays-cheese-bar-new-york,https://www.yelp.com/biz/murrays-cheese-bar-new-york,CLOSED,West Village i LIC zatvoreni; proveriti koju lokaciju alias pokriva
-r19,Pure Thai Cookhouse,pure-thai-cookhouse-new-york,https://www.yelp.com/biz/pure-thai-cookhouse-new-york,OPEN,
-r20,K Rico Steakhouse,k-rico-steakhouse-new-york,https://www.yelp.com/biz/k-rico-steakhouse-new-york,CLOSED,zatvoren avg. 2023
-r21,Jungsik,jungsik-new-york,https://www.yelp.com/biz/jungsik-new-york,OPEN,
-r22,Samba Kitchen,samba-kitchen-new-york-5,https://www.yelp.com/biz/samba-kitchen-new-york-5,CLOSED,zatvoren (provera mentora 2026-10)
-r23,B Side Pizza & Wine Bar,b-side-pizza-and-wine-bar-new-york,https://www.yelp.com/biz/b-side-pizza-and-wine-bar-new-york,CLOSED,
-r24,San Carlo Osteria Piemonte,san-carlo-osteria-piemonte-new-york-city,https://www.yelp.com/biz/san-carlo-osteria-piemonte-new-york-city,OPEN,
-r25,Per Se,per-se-new-york,https://www.yelp.com/biz/per-se-new-york,OPEN,
-r26,The Modern,the-modern-new-york-3,https://www.yelp.com/biz/the-modern-new-york-3,OPEN,
-r27,Gabriel Kreuther,gabriel-kreuther-new-york,https://www.yelp.com/biz/gabriel-kreuther-new-york,OPEN,
-r28,Eileen's Special Cheesecake,eileens-special-cheesecake-new-york,https://www.yelp.com/biz/eileens-special-cheesecake-new-york,OPEN,
-r29,Juliana's Pizza,julianas-pizza-brooklyn-5,https://www.yelp.com/biz/julianas-pizza-brooklyn-5,OPEN,
-r30,Russ & Daughters,russ-and-daughters-new-york,https://www.yelp.com/biz/russ-and-daughters-new-york,OPEN,
+id,restoran,yelp_alias,yelp_url,tripadvisor_id,tripadvisor_url,status_2026,napomena
+r01,Piccola Cucina Osteria,piccola-cucina-osteria-new-york,https://www.yelp.com/biz/piccola-cucina-osteria-new-york,4363835,https://www.tripadvisor.com/Restaurant_Review-g60763-d4363835-Reviews-Piccola_Cucina_Osteria-New_York_City_New_York.html,OPEN,
+r02,Piccola Cucina Enoteca,piccola-cucina-enoteca-new-york-2,https://www.yelp.com/biz/piccola-cucina-enoteca-new-york-2,1731141,https://www.tripadvisor.com/Restaurant_Review-g60763-d1731141-Reviews-Piccola_Cucina_Enoteca-New_York_City_New_York.html,CLOSED,184 Prince St; TA stranica preusmerava na listu NYC (verovatno nedostupna)
+r03,Club A Steakhouse,club-a-steakhouse-new-york,https://www.yelp.com/biz/club-a-steakhouse-new-york,1236281,https://www.tripadvisor.com/Restaurant_Review-g60763-d1236281-Reviews-Club_A_Steakhouse-New_York_City_New_York.html,OPEN,
+r04,Sottocasa Pizzeria - Harlem,sottocasa-pizzeria-harlem-new-york,https://www.yelp.com/biz/sottocasa-pizzeria-harlem-new-york,10165896,https://www.tripadvisor.com/Restaurant_Review-g60763-d10165896-Reviews-Sottocasa_Pizzeria_Harlem-New_York_City_New_York.html,OPEN,
+r05,Boucherie Union Square,boucherie-union-square-new-york,https://www.yelp.com/biz/boucherie-union-square-new-york,13504265,https://www.tripadvisor.com/Restaurant_Review-g60763-d13504265-Reviews-Boucherie_Union_Square-New_York_City_New_York.html,OPEN,
+r06,Loi Estiatorio,loi-estiatorio-new-york,https://www.yelp.com/biz/loi-estiatorio-new-york,7814915,https://www.tripadvisor.com/Restaurant_Review-g60763-d7814915-Reviews-Loi_Estiatorio-New_York_City_New_York.html,OPEN,
+r07,Song E Napule,song-e-napule-new-york,https://www.yelp.com/biz/song-e-napule-new-york,8319600,https://www.tripadvisor.com/Restaurant_Review-g60763-d8319600-Reviews-Song_E_Napule_Pizzeria_Trattoria-New_York_City_New_York.html,OPEN,
+r08,Los Tacos No.1,los-tacos-no-1-new-york-3,https://www.yelp.com/biz/los-tacos-no-1-new-york-3,4578404,https://www.tripadvisor.com/Restaurant_Review-g60763-d4578404-Reviews-Los_Tacos_No_1-New_York_City_New_York.html,OPEN,
+r09,Boucherie West Village,boucherie-west-village-new-york-3,https://www.yelp.com/biz/boucherie-west-village-new-york-3,11918545,https://www.tripadvisor.com/Restaurant_Review-g60763-d11918545-Reviews-Boucherie_West_Village-New_York_City_New_York.html,OPEN,
+r10,Petite Boucherie,petite-boucherie-new-york,https://www.yelp.com/biz/petite-boucherie-new-york,10145683,https://www.tripadvisor.com/Restaurant_Review-g60763-d10145683-Reviews-Petite_Boucherie-New_York_City_New_York.html,OPEN,
+r11,Daniel,daniel-new-york-4,https://www.yelp.com/biz/daniel-new-york-4,457808,https://www.tripadvisor.com/Restaurant_Review-g60763-d457808-Reviews-Daniel-New_York_City_New_York.html,OPEN,
+r12,Olio e Più,olio-e-piú-new-york-3,https://www.yelp.com/biz/olio-e-pi%C3%BA-new-york-3,1878682,https://www.tripadvisor.com/Restaurant_Review-g60763-d1878682-Reviews-Olio_E_Piu-New_York_City_New_York.html,OPEN,
+r13,Spice Symphony,spice-symphony-new-york,https://www.yelp.com/biz/spice-symphony-new-york,,,OPEN,"182 Lexington Ave; TA d12383830 preusmerava na d3603515 (150 E 50th St, r14) - provereno 2026-10-18; Lexington nema zasebnu TA stranicu"
+r14,Spice Symphony 2,spice-symphony-new-york-3,https://www.yelp.com/biz/spice-symphony-new-york-3,3603515,https://www.tripadvisor.com/Restaurant_Review-g60763-d3603515-Reviews-Spice_Symphony-New_York_City_New_York.html,OPEN,150 E 50th St; TA 3603515 možda pre 12/2016 pripadao Lexington lokaciji
+r15,Sottocasa Pizzeria (Brooklyn),sottocasa-pizzeria-brooklyn-3,https://www.yelp.com/biz/sottocasa-pizzeria-brooklyn-3,3437996,https://www.tripadvisor.com/Restaurant_Review-g60827-d3437996-Reviews-Sottocasa_Pizzeria-Brooklyn_New_York.html,OPEN,
+r16,Le Bernardin,le-bernardin-new-york,https://www.yelp.com/biz/le-bernardin-new-york,424434,https://www.tripadvisor.com/Restaurant_Review-g60763-d424434-Reviews-Le_Bernardin-New_York_City_New_York.html,OPEN,
+r17,Royal 35 Steakhouse,royal-35-steakhouse-new-york,https://www.yelp.com/biz/royal-35-steakhouse-new-york,12015308,https://www.tripadvisor.com/Restaurant_Review-g60763-d12015308-Reviews-Royal_35_Steakhouse-New_York_City_New_York.html,OPEN,
+r18,Murray's Cheese Bar,murrays-cheese-bar-new-york,https://www.yelp.com/biz/murrays-cheese-bar-new-york,4888905,https://www.tripadvisor.com/Restaurant_Review-g48080-d4888905-Reviews-Murray_s_Cheese_Bar_Restaurant_Shop-Long_Island_City_Queens_New_York.html,CLOSED,264 Bleecker St (zatvoren ~2020-08); Yelp i TA listing prebačeni na LIC adresu (28-30 Jackson Ave) - recenzije posle 2020 možda za LIC
+r19,Pure Thai Cookhouse,pure-thai-cookhouse-new-york,https://www.yelp.com/biz/pure-thai-cookhouse-new-york,2099173,https://www.tripadvisor.com/Restaurant_Review-g60763-d2099173-Reviews-Pure_Thai_Cookhouse-New_York_City_New_York.html,OPEN,
+r20,K Rico Steakhouse,k-rico-steakhouse-new-york,https://www.yelp.com/biz/k-rico-steakhouse-new-york,7617787,https://www.tripadvisor.com/Restaurant_Review-g60763-d7617787-Reviews-K_Rico_Steakhouse-New_York_City_New_York.html,CLOSED,772 9th Ave; zatvoren ~2023-08; TA URL slug nepotvrđen
+r21,Jungsik,jungsik-new-york,https://www.yelp.com/biz/jungsik-new-york,2345886,https://www.tripadvisor.com/Restaurant_Review-g60763-d2345886-Reviews-Jungsik-New_York_City_New_York.html,OPEN,
+r22,Samba Kitchen,samba-kitchen-new-york-5,https://www.yelp.com/biz/samba-kitchen-new-york-5,10781002,https://www.tripadvisor.com/Restaurant_Review-g60763-d10781002-Reviews-Samba_Kitchen-New_York_City_New_York.html,CLOSED,457 W 50th St
+r23,B Side Pizza & Wine Bar,b-side-pizza-and-wine-bar-new-york,https://www.yelp.com/biz/b-side-pizza-and-wine-bar-new-york,7078660,https://www.tripadvisor.com/Restaurant_Review-g60763-d7078660-Reviews-B_Side_Pizzeria-New_York_City_New_York.html,CLOSED,"370 W 51st St; na TA ""B Side Pizzeria"" (ne B-Side na Avenue B, d4479344)"
+r24,San Carlo Osteria Piemonte,san-carlo-osteria-piemonte-new-york-city,https://www.yelp.com/biz/san-carlo-osteria-piemonte-new-york-city,10032108,https://www.tripadvisor.com/Restaurant_Review-g60763-d10032108-Reviews-San_Carlo_Osteria_Piemonte-New_York_City_New_York.html,OPEN,
+r25,Per Se,per-se-new-york,https://www.yelp.com/biz/per-se-new-york,425628,https://www.tripadvisor.com/Restaurant_Review-g60763-d425628-Reviews-Per_Se-New_York_City_New_York.html,OPEN,
+r26,The Modern,the-modern-new-york-3,https://www.yelp.com/biz/the-modern-new-york-3,549201,https://www.tripadvisor.com/Restaurant_Review-g60763-d549201-Reviews-The_Modern-New_York_City_New_York.html,OPEN,
+r27,Gabriel Kreuther,gabriel-kreuther-new-york,https://www.yelp.com/biz/gabriel-kreuther-new-york,8483826,https://www.tripadvisor.com/Restaurant_Review-g60763-d8483826-Reviews-Gabriel_Kreuther-New_York_City_New_York.html,OPEN,
+r28,Eileen's Special Cheesecake,eileens-special-cheesecake-new-york,https://www.yelp.com/biz/eileens-special-cheesecake-new-york,808386,https://www.tripadvisor.com/Restaurant_Review-g60763-d808386-Reviews-Eileen_s_Special_Cheesecake-New_York_City_New_York.html,OPEN,
+r29,Juliana's Pizza,julianas-pizza-brooklyn-5,https://www.yelp.com/biz/julianas-pizza-brooklyn-5,3741802,https://www.tripadvisor.com/Restaurant_Review-g60827-d3741802-Reviews-Juliana_s-Brooklyn_New_York.html,OPEN,
+r30,Russ & Daughters,russ-and-daughters-new-york,https://www.yelp.com/biz/russ-and-daughters-new-york,1224238,https://www.tripadvisor.com/Restaurant_Review-g60763-d1224238-Reviews-Russ_Daughters-New_York_City_New_York.html,OPEN,
