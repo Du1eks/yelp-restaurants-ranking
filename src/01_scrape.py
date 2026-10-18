@@ -15,7 +15,7 @@ from apify_client import ApifyClient
 ROOT = Path(__file__).resolve().parents[1]
 ACTOR = "epicscrapers/yelp-reviews-scraper"
 PRICE_PER_REVIEW = 0.00025  # USD, FREE nivo
-MODE = "preflight"
+MODE = "test"
 
 # po režimu: koliko restorana, koliko recenzija po restoranu (0 = sve), gornja granica troška
 SETTINGS = {
@@ -48,7 +48,8 @@ client = ApifyClient(read_token())
 run = client.actor(ACTOR).call(run_input=run_input, max_total_charge_usd=Decimal(s["cap"]))
 print("status:", run.status)
 
-items = client.dataset(run.default_dataset_id).list_items().items
+# iterate_items preuzima rezultate u delovima (bitno za ~51.000 recenzija u "full")
+items = list(client.dataset(run.default_dataset_id).iterate_items())
 out = ROOT / "data" / "raw" / f"yelp_epicscrapers_{MODE}.json"
 out.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"{len(items)} recenzija -> {out}")
