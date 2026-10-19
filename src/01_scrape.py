@@ -15,7 +15,7 @@ import pandas as pd
 from apify_client import ApifyClient
 
 ROOT = Path(__file__).resolve().parents[1]
-PLATFORM = "tripadvisor"
+PLATFORM = "yelp"
 MODE = "full"
 
 # po režimu: koliko restorana, koliko recenzija po restoranu (0 = sve)
