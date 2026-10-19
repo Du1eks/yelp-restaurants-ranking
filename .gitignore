@@ -8,6 +8,7 @@ __pycache__/
 
 # Sirovi podaci (sadrže imena recenzenata; ne idu na git)
 data/raw/
+data/clean/
 
 # Beleške i materijali (ne idu na git)
 materials/
