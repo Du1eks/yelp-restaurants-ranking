@@ -124,6 +124,9 @@ Ulazni parametri (TripAdvisor `locationId`, redosled restaurant_id bez 13):
   r13 nema TripAdvisor podatke, a r14 se ne koristi u poređenju platformi.
 - **Murray's Cheese Bar.** Yelp listing je prebačen sa Bleecker St na novi lokal u Long Island City; recenzije od
   20. 8. 2020. označene su u `yelp_reviews.csv` kao `location_period = murrays_lic`.
+- **Datumi zatvaranja** su u `data/closed_restaurants.csv` (procena, interval, pouzdanost, dokaz, izvor) i u
+  `data/clean/restaurants.csv`. Piccola Cucina Enoteca: zatvaranje između 20. 11. 2021. i 12. 4. 2023., dakle blizu reza
+  31. 12. 2021. – nije sigurno na kojoj je strani reza.
 - **Vrednosti o recenzentu** (broj recenzija/doprinosa, prijatelja, fotografija, Elite) su stanje profila na dan preuzimanja,
   ne u trenutku pisanja recenzije.
 - **Datumi.** Yelp: datum i vreme u UTC. TripAdvisor: datum objave (bez vremena) i mesec posete.
