@@ -15,3 +15,6 @@ materials/
 CLAUDE.md
 .claude/
 OBJASNJENJE_FAZA.md
+
+# ZIP-ovi (podaci za mentora sadrže lične podatke)
+*.zip
